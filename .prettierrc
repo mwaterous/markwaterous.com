@@ -1,0 +1,17 @@
+{
+  "plugins": [
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "tailwindFunctions": [
+    "clsx"
+  ],
+  "organizeImportsSkipDestructiveCodeActions": true,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "printWidth": 120,
+  "bracketSameLine": true,
+  "arrowParens": "always"
+}
