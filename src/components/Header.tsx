@@ -3,7 +3,6 @@ import siteMetadata from '@/data/siteMetadata'
 // import Logo from '@/data/logo.svg'
 import Link from './Link'
 import MobileNav from './MobileNav'
-import SearchButton from './SearchButton'
 import ThemeSwitch from './ThemeSwitch'
 
 const Header = () => {
@@ -37,7 +36,6 @@ const Header = () => {
               </Link>
             ))}
         </div>
-        <SearchButton />
         <ThemeSwitch />
         <MobileNav />
       </div>
