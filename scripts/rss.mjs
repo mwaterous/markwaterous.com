@@ -1,11 +1,11 @@
-import { writeFileSync, mkdirSync } from 'fs'
-import path from 'path'
+import tagData from '@/app/tag-data.json' with { type: 'json' }
+import siteMetadata from '@/data/siteMetadata.js'
+import { allBlogs } from 'contentlayer/generated/index.mjs'
+import { mkdirSync, writeFileSync } from 'fs'
 import { slug } from 'github-slugger'
-import { escape } from 'pliny/utils/htmlEscaper.js'
-import siteMetadata from '../data/siteMetadata.js'
-import tagData from '../app/tag-data.json' with { type: 'json' }
-import { allBlogs } from '../.contentlayer/generated/index.mjs'
+import path from 'path'
 import { sortPosts } from 'pliny/utils/contentlayer.js'
+import { escape } from 'pliny/utils/htmlEscaper.js'
 
 const outputFolder = process.env.EXPORT ? 'out' : 'public'
 
